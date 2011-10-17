@@ -84,6 +84,10 @@ module Spreadsheet
           @worksheets.find { |sheet| sheet.name(encoding) == idx }
         end
       end
+      
+      def sheet_count
+        worksheets.count
+      end
     end
   end
 end
